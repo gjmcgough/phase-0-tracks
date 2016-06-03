@@ -1,1 +1,0 @@
-# gjmcgough.github.io
