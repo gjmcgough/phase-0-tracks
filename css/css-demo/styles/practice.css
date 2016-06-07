@@ -1,0 +1,21 @@
+section#contact-info{
+	font-size: 0.8em;
+}
+
+section.job{
+	background-color: #e9e5dc;
+	border-radius: 10px;
+	padding: 1px;
+	margin-top: 10px;
+}
+ul {
+	font-size: .8em;
+}
+
+p::first-line{
+	color: red;
+}
+
+.job ul li{
+	font-size: 50px;
+}
