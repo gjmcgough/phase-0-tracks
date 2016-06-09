@@ -1,0 +1,157 @@
+body {
+	background-color: #00ffff;
+}
+.yellow {
+	background-color: #ff9999;
+	padding: 3px;
+	border-radius: 15px;
+	margin-top: -10px;
+	border-color: purple;
+	border-style: groove;
+	color: purple;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+table#table {
+	
+	margin-bottom: 20px;
+	background-color: purple;
+	border-style: groove;
+	border-color: yellow;
+	border-radius: 10px;
+	font-family: "comic sans",cursive,sans-serif;
+	color: yellow;
+	text-align: center;
+	position: relative;
+}
+h1 {
+	font-family: "Impact", charcoal, sans-serif;
+	margin: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	color: yellow;
+	background-color: purple;
+	padding: 4px;
+}
+h2 {
+	font-family: "Impact", charcoal, sans-serif;
+	margin: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	color: yellow;
+	background-color: purple;
+	border-style: solid;
+	padding: 4px;
+}
+div#rankings {
+	background-color: #ff9999;
+	padding: 5px;
+	border-radius: 20px;
+	border-color: purple;
+	border-style: groove;
+	color: purple;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-top: 10px;
+	margin-right: 600px;
+}
+#homeintro {
+	background-color: yellow;
+	padding: 5px;
+	border-color: purple;
+	border-style: groove;
+	color: purple;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+p.yellow{
+	margin-top: 20px;
+	font-family: "Lucida Console", Monaco, monospace;
+	width: 50%;
+}
+a {
+	margin-top: 10px;
+	color: blue;
+	position: relative;
+	margin-bottom: 30px;
+	text-decoration: none;
+	font-family: "Tahoma", Geneva, sans-serif
+}
+a:visited {
+	color: yellow;
+}
+a:hover {
+	color: white;
+}
+p#explanation {
+	margin-top: 0px;
+	background-color: #ff9999;
+	border-radius: 20px;
+	border-color: purple;
+	border-style: groove;
+	color: purple;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	padding: 5px;
+}
+.image img {
+	width: 100%;
+}
+fieldset.yellow {
+	margin-left: 210px;
+}
+ol {
+	list-style-type: circle;
+}
+p#warning {
+	margin-left: 210px;
+	margin-top: -10px;
+	background-color: yellow;
+	padding: 3px;
+	border-radius: 15px;
+	border-color: purple;
+	border-style: groove;
+	color: purple;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+p#nuts {
+	margin-left: 210px;
+	margin-top: -230px;
+	background-color: yellow;
+	padding: 3px;
+	border-radius: 15px;
+	border-color: purple;
+	border-style: groove;
+	color: purple;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+button {
+	margin-left: 210px;
+	margin-top: 5px;
+}
+#butts{
+	margin-left: 500px;
+}
+img#back {
+	height: 350px;
+	width: 525px;
+	margin-left: 700px;
+	margin-bottom: -10px;
+	margin-top: -140px;
+	border-style: groove;
+	border-color: yellow;
+}
+img#sleepy {
+	height: 200px;
+	width: 405px;
+	margin-left: 130px;
+	margin-bottom: 5px;
+	margin-top: -190px;
+	border-style: groove;
+	border-color: yellow;
+}
+#home {
+	margin-top: 30px;
+	margin-left: 600px;
+}
