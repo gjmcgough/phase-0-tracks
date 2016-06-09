@@ -13,12 +13,13 @@ section#external-links {
   display: inline-block;
   list-style-type: none;
   padding-left: 0px;
-  width: 200px;
-  margin-left: 800px;
+  width: 20%;
+  margin-left: 70%;
   margin-top: 0px;
   margin-bottom: 0px;
+  margin-right: 0px;
+  position: relative;
 }
-
 /* you're welcome to edit the
 image, figure, and figcaption CSS if you'd like, 
 but it's optional! */
@@ -36,6 +37,8 @@ figcaption {
   text-align: right;
 }
 main {
-  margin-top: -200px;
-  width: 756px;
+  display: inline-block;
+  margin-top: -150px;
+  margin-right: 200px;
+  width: 60%;
 }
