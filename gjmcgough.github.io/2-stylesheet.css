@@ -1,0 +1,76 @@
+html {
+	background-color: white;
+}
+
+header {
+	margin-top: 0px;
+	background-color: #06EBEB;
+	width: 110%;
+	margin-left: -5%;
+	margin-top: -10px;
+	padding: 3px;
+	color: #AA7400;
+	text-decoration: none;
+	font-family: "Tahoma", Geneva, sans-serif
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	color: white;
+}
+
+.head h1 {
+	width: 110%;
+	margin-left: -5%;
+	color: #651DEF;
+	font-family: helvetica;
+	background-color: #EDC56E;
+}
+
+.wrapper {
+	font-family: "trebuchet ms";
+}
+
+div.left-column {
+	height: 500px;
+	float: left;
+	width: 20%;
+	border-right: solid;
+	border-color:  #06EBEB;
+}
+
+div.left-column p {
+	column-count: 0;
+}
+
+.wrapper h3 {
+	margin: 0px 0px 0px 0px;
+	margin-bottom: 5px;
+}
+
+.wrapper p img {
+	display: flex;
+	justify-content: flex-start;
+	height: 200px;
+	width: 300px;
+	margin-left: 15px;
+}
+
+.wrapper p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 50%;
+	max-height: 50%;
+}
+
+.wrapper img {
+	display: block;
+	height: 300px;
+	width: 400px;
+	margin: 0px 0px 10px 10px;
+	float: left;
+}
