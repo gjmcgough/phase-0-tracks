@@ -1,0 +1,19 @@
+-using an elevator	
+	- find the panel of buttons with numbers and/or letters
+	- determine which floor your destination is on
+	- find and press the button with the number that matches the destination's floor
+	- step out of the elevator when the doors open and the floor number matches your destination's
+
+-brushing teeth
+	- go to bathroom
+	- find toothbrush and toothpaste
+	- put toothpaste on toothbrush
+	- put small amount of water on toothbrush with toothpaste on it
+	- open mouth and insert toothbrush into mouth
+	- push and pull brush against teeth constantly moving throughout the mouth
+	- do this for 2 minutes
+	- take toothbrush out of mouth
+	- spit excess water and toothpaste out, and rinse mouth
+	- rinse off toothbrush
+	- replace toothbrush
+	- dry hands and face
