@@ -2,7 +2,6 @@
 	-determine whether you are on the correct floor
 		-if you need to go to a different floor	
 			- find the panel of buttons with numbers and/or letters
-			- determine which floor your destination is on
 			- search the panel until you find a button with the number that matches the destination's floor
 			- step out of the elevator when the doors open and the floor number matches your destination's
 		-else if you are on the correct floor do not use the elevator
