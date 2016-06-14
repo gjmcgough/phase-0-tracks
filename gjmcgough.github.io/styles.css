@@ -43,6 +43,8 @@ h2 {
 	padding: 4px;
 }
 div#rankings {
+
+	margin-right: 55%;
 	background-color: #ff9999;
 	padding: 5px;
 	border-radius: 20px;
@@ -50,10 +52,31 @@ div#rankings {
 	border-style: groove;
 	color: purple;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	margin-left: 0px;
-	margin-bottom: 0px;
-	margin-top: 10px;
-	margin-right: 600px;
+}
+img#back {
+	display: block;
+	margin-top: -11%;
+	margin-left: 54%;
+	height: 300px;
+	width: 500px;
+}
+img#sleepy {
+	height: 300px;
+	width: 400px;
+	margin-top: -150px;
+	margin-right: 75%;
+}
+
+p#explanation {
+	background-color: #ff9999;
+	border-radius: 20px;
+	border-color: purple;
+	border-style: groove;
+	color: purple;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	padding: 5px;
+	margin-left: 40%;
+	margin-top: -10%;
 }
 #homeintro {
 	background-color: yellow;
@@ -80,11 +103,12 @@ a {
 	font-family: "Tahoma", Geneva, sans-serif
 }
 a:visited {
-	color: yellow;
+	color: tan;
 }
 a:hover {
 	color: white;
 }
+<<<<<<< HEAD
 p#explanation {
 	margin-top: 0px;
 	background-color: #ff9999;
@@ -95,6 +119,7 @@ p#explanation {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	padding: 5px;
 }
+
 .image img {
 	width: 100%;
 }
@@ -133,6 +158,7 @@ button {
 #butts{
 	margin-left: 500px;
 }
+<<<<<<< HEAD
 img#back {
 	height: 350px;
 	width: 525px;
@@ -151,7 +177,179 @@ img#sleepy {
 	border-style: groove;
 	border-color: yellow;
 }
+
 #home {
 	margin-top: 30px;
 	margin-left: 600px;
 }
+
+@media screen and (max-width: 1028px) {
+	div#rankings {
+		width: 45%;
+		background-color: #ff9999;
+		border-radius: 20px;
+		border-color: purple;
+		border-style: groove;
+		color: purple;
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		padding: 5px;
+	}
+	img#back {
+		border-style: groove;
+		border-color: yellow;
+		display: block;
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+	img#sleepy {
+		border-style: groove;
+		border-color: yellow;
+		display: block;
+		margin-top: 8%;
+		visibility: hidden;
+	}
+	p#explanation {
+		background-color: #ff9999;
+		border-radius: 20px;
+		border-color: purple;
+		border-style: groove;
+		color: purple;
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		padding: 5px;
+		margin-left: 0px;
+		margin-top: -38.5%;
+		position: relative;
+		max-width: 50%;
+	}
+	#butts {
+		margin-left: 40%;
+	}
+}
+@media screen and (max-width: 875px) {
+	div#rankings {
+		width: 45%;
+		background-color: #ff9999;
+		border-radius: 20px;
+		border-color: purple;
+		border-style: groove;
+		color: purple;
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		padding: 5px;
+	}
+	img#back {
+		border-style: groove;
+		border-color: yellow;
+		display: block;
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+	img#sleepy {
+		border-style: groove;
+		border-color: yellow;
+		display: block;
+		margin-top: 8%;
+		visibility: hidden;
+	}
+	p#explanation {
+		background-color: #ff9999;
+		border-radius: 20px;
+		border-color: purple;
+		border-style: groove;
+		color: purple;
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		padding: 5px;
+		margin-left: 0px;
+		margin-top: -44.5%;
+		position: relative;
+		max-width: 50%;
+	}
+	#butts {
+		margin-left: 40%;
+	}
+}
+@media screen and (max-width: 700px) {
+	div#rankings {
+		width: 45%;
+		background-color: #ff9999;
+		border-radius: 20px;
+		border-color: purple;
+		border-style: groove;
+		color: purple;
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		padding: 5px;
+	}
+	img#back {
+		border-style: groove;
+		border-color: yellow;
+		display: block;
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+	img#sleepy {
+		border-style: groove;
+		border-color: yellow;
+		display: block;
+		margin-top: 8%;
+		visibility: hidden;
+	}
+	p#explanation {
+		background-color: #ff9999;
+		border-radius: 20px;
+		border-color: purple;
+		border-style: groove;
+		color: purple;
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		padding: 5px;
+		margin-left: 0px;
+		margin-top: -54%;
+		position: relative;
+		max-width: 50%;
+	}
+	#butts {
+		margin-left: 40%;
+	}
+}
+@media screen and (max-width: 595px) {
+	div#rankings {
+		width: 45%;
+		background-color: #ff9999;
+		border-radius: 20px;
+		border-color: purple;
+		border-style: groove;
+		color: purple;
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		padding: 5px;
+	}
+	img#back {
+		border-style: groove;
+		border-color: yellow;
+		display: block;
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+	img#sleepy {
+		border-style: groove;
+		border-color: yellow;
+		display: block;
+		margin-top: 8%;
+		visibility: hidden;
+	}
+	p#explanation {
+		background-color: #ff9999;
+		border-radius: 20px;
+		border-color: purple;
+		border-style: groove;
+		color: purple;
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		padding: 5px;
+		margin-left: 0px;
+		margin-top: -62%;
+		position: relative;
+		max-width: 50%;
+	}
+	#butts {
+		margin-left: 40%;
+	}
+}
+
+>>>>>>> master
