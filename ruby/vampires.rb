@@ -34,10 +34,26 @@ while amount > 0
 		puts "i dont understand"
 	end
 	
+	vamp = false
+
+	until vamp
+
+		puts "list ur allergies one by one, type 'done' when done"
+		allergy = gets.chomp
+		
+		if allergy == "sunshine"
+			vamp = true
+		elsif allergy == "done"
+			vamp = true
+		end
+	end
+	
 	if name == "Drake Cula"
 		puts "Definitely a Vampire"
 	elsif name == "Tu Fang"
 		puts "def a vamp"
+	elsif allergy == "sunshine"
+		puts "prob a vamp"
 	elsif (age == actual_age) && (garlic || health)
 		puts "probably not a vampire"
 	elsif (age != actual_age) && (garlic || health) 
