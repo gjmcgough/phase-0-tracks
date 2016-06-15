@@ -1,3 +1,29 @@
-html {
-	background-color: blue
+header {
+  background-color: blue;
+  padding: 5px;
+  color: red;
+  font-family: helvetica;
+  border: solid;
+  border-color: pink;
+}
+
+.column-1 {
+  float: left;
+  width: 46%;
+  border-right: solid;
+  background-image: url(http://3.bp.blogspot.com/_2LFrr7RMpBY/TAMShjobFbI/AAAAAAAAAEI/t2k9lWJWTVg/s1600/27022.jpeg);
+  font-family: arial;
+}
+
+.column-2 {
+  float: left;
+  width: 48%;
+  background-color: yellow;
+  font-family: comic sans ms;
+  color: purple;
+}
+
+footer {
+  clear: left;
+  background-color: green;
 }
