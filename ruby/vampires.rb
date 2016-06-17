@@ -13,31 +13,39 @@ while amount > 0
 	puts "what year were you born?"
 	actual_age = 2016 - gets.to_i
 	
-	puts "Quieres garlic bread? (y/n)"
-	garlic = gets.chomp
-	if garlic == "y"
-		garlic = true
-	elsif garlic == "n"
-		garlic = false
-	else
-		puts "i dont understand"
+	
+	bread = true
+	while bread
+		puts "Quieres garlic bread? (y/n)"
+		garlic = gets.chomp
+		if garlic == "y"
+			garlic = true
+			bread = false
+		elsif garlic == "n"
+			garlic = false
+			bread = false
+		else
+			puts "i dont understand"
+		end
 	end
 	
-	
-	puts "do u want health insurance? (y/n)"
-	health = gets.chomp
-	if health == "y"
-		health = true
-	elsif health == "n"
-		health = false
-	else
-		puts "i dont understand"
+	insurance = true
+	while insurance
+		puts "do u want health insurance? (y/n)"
+		health = gets.chomp
+		if health == "y"
+			health = true
+			insurance = false
+		elsif health == "n"
+			health = false
+			insurance = false
+		else
+			puts "i dont understand"
+		end
 	end
 	
 	vamp = false
-
 	until vamp
-
 		puts "list ur allergies one by one, type 'done' when done"
 		allergy = gets.chomp
 		
