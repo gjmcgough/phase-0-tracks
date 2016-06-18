@@ -6,7 +6,11 @@
 def encrypt(string)
 	index = 0
 	while index < string.length
-		puts string[index].next
+		if string[index].next.include? "aa"
+			puts string[index].next.gsub("aa" , "a")
+		else
+			puts string[index].next
+		end
 		index += 1
 	end
 end
@@ -28,7 +32,7 @@ encrypt("zed")
 def decrypt(str)
 	num = 0
 	while num < str.length
-		dec = ("abcdefghijklmnopqrstuvwxyz".index("#{str.chr}")) - 1
+		dec = ("abcdefghijklmnopqrstuvwxyz".index("#{str}")) - 1
 		puts "abcdefghijklmnopqrstuvwxyz"[dec]
 		num += 1
 	end
