@@ -17,6 +17,8 @@ until loop
 		loop = true
 	else
 		puts "I don't understand"
+	end
+end
 
 # define method encrypt
 # create loop for string length
@@ -28,7 +30,7 @@ def encrypt(string)
     new_str = ""
     while index < string.length
         if string[index].next.include? "aa"
-            new_str += print string[index].next.gsub("aa" , "a")
+            new_str += string[index].next.gsub("aa" , "a")
         else
              new_str += string[index].next
         end
