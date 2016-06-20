@@ -72,3 +72,4 @@ else
 	p nil
 end
 	
+encrypt(decrypt("swordfish"))
