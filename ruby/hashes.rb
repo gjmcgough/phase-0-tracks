@@ -33,6 +33,16 @@ client = {
 
 p client
 
+puts "Please enter the key you would like to update, otherwise enter 'done'."
+key_names = gets.chomp
+	if key_names.downcase == "done"
+		p client
+	elsif key_names.to_sym == :name
+		puts "What do you want new key to be?"
+		:name = gets.to_sym
+	end
+	
+	p :name
 
 
 # give user opporunity to update a key so that if they type in a new keyname it will replace an old one of users choice
