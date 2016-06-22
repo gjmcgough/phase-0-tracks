@@ -33,18 +33,39 @@ client = {
 
 p client
 
-puts "Please enter the key you would like to update, otherwise enter 'done'."
-key_names = gets.chomp
-	if key_names.downcase == "done"
-		p client
-	elsif key_names.to_sym == :name
-		puts "What do you want new key to be?"
-		:name = gets.to_sym
-	end
-	
-	p :name
-
-
 # give user opporunity to update a key so that if they type in a new keyname it will replace an old one of users choice
 
+puts "Please enter the key you would like to update, otherwise enter 'done'."
+key_names = gets.chomp
+
+if key_names.downcase == "done"
+	client
+elsif key_names == "name"
+	puts "What do you want new key to be?"
+	new_name = gets.chomp
+	client[new_name.to_sym] = client.delete :name
+elsif key_names == "age"
+	puts "What do you want new key to be?"
+	new_name = gets.chomp
+	client[new_name.to_sym] = client.delete :age
+elsif key_names == "children"
+	puts "What do you want new key to be?"
+	new_name = gets.chomp
+	client[new_name.to_sym] = client.delete :children
+elsif key_names == "decor"
+	puts "What do you want new key to be?"
+	new_name = gets.chomp
+	client[new_name.to_sym] = client.delete :decor
+elsif key_names == "yard"
+	puts "What do you want new key to be?"
+	new_name = gets.chomp
+	client[new_name.to_sym] = client.delete :yard
+elsif key_names == "basement"
+	puts "What do you want new key to be?"
+	new_name = gets.chomp
+	client[new_name.to_sym] = client.delete :basement
+end
+	
 # print latest version of the hash
+
+p client
