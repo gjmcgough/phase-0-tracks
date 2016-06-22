@@ -36,3 +36,51 @@ surfer_array.map! do |surfer|
 end
 
 p surfer_array
+
+new_ary = [4, 1, 341, 4355]
+
+new_hsh = {
+	a: 7,
+	b: 4,
+	c: 3
+}
+
+new_ary.delete_if { |item| item < 5 }
+new_hsh.delete_if { |key, value| value < 5 }
+
+
+new_ary = [4, 1, 341, 4355]
+
+new_hsh = {
+	a: 7,
+	b: 4,
+	c: 3
+}
+
+new_ary.keep_if { |item| item < 5 }
+new_hsh.keep_if { |key, value| value < 5}
+
+
+new_ary = [4, 1, 341, 4355]
+
+new_hsh = {
+	a: 7,
+	b: 4,
+	c: 3
+}
+
+new_ary.select { |item| item > 5}
+new_hsh.select { |k, v| v > 5}
+
+new_ary = [4, 1, 341, 4355]
+
+new_hsh = {
+	a: 7,
+	b: 4,
+	c: 3
+}
+
+new_ary.drop_while { |n| n < 5}
+new_hsh.drop_while { |k , v| k == :a }
+
+# drop_while does not work for on hashes so it acts as the hash is an array and it can only perform on the keys of the array.
