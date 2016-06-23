@@ -19,6 +19,7 @@ yard = gets.chomp
 
 puts "Basement? (y/n)"
 basement = gets.chomp
+wants_basement = basement == "y"
 
 # when all questions answered print result to screen
 
