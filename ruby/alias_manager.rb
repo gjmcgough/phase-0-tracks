@@ -2,10 +2,10 @@
 
 def name_switch(first_name, last_name)
 	swap = last_name + " " + first_name
-	swap.split(" ")
+
 end
 
-swapped_name = name_switch('aaa', 'bbb')
+swapped_name = name_switch('Felicia', 'Torres')
 
 p swapped_name
 
@@ -22,21 +22,26 @@ end
 # single out vowels then swap them out 
 # single out letters then swap them out and then re-merge the names
 # loop thru array of aeiou and add to .include?
+# line 40 make a method that declares a variable for the next letter in vowels array
 
-name_letter = '#{ary[idx][sub_idx]}'
 vowels = ['a','e','i','o','u']
+
 idx = 0
 while idx < ary.length
 	sub_idx = 0
+	name_letter = ary[idx][sub_idx]
 	while sub_idx < ary[idx].length
 		v_index = vowels.index(name_letter)
 		v_index = v_index.to_i
 		new_str = ''
-		while v_index < vowels.length
-			if v_index == 0
-				new_str += name_letter.next
-			else
-				new_str += ary[idx].gsub(name_letter, vowels.index(name_letter))
+		vow_checker = vowels[v_index]
+		while v_index < ary[idx].length
+			advance_index = (vowels.index(vow_checker) + 1)
+			next_vowel = vowels[advance_index]
+			if swapped_name.include?(vow_checker)
+				new_str += swapped_name.gsub(vow_checker, next_vowel)
+		#	elsif swapped_name.include?"a"
+		#		new_str += swapped_name.gsub("a", "e")
 			end
 			v_index += 1
 		end
@@ -48,7 +53,6 @@ end
 p ary
 p new_str
 
-# then re-merge the names
 
 
 
