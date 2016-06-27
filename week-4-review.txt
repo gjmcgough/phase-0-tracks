@@ -1,0 +1,24 @@
+1. A variable is anything you want it to be! programmers use this to store certain info that can be called later.
+2. Takes last_name, combines with first_name, applies that value to full_name.
+3. string- when need to ask user a question
+integer- when referencing a certain letter in a string
+float- when you need to access a decimal
+nil- value of nothing, to verify there is a value of nothing
+boolean- when u have a true or false question and answer
+4. an algorithm is a set of rules or calculations to be followed to solve an argument
+5. recursive and random algorithms
+6. A method is a program that runs its own world.  programmers would use them to accomplish tasks simply by calling the saved method.
+7. return value- the value of the return after the method has ran, designated at the end as => "return value"
+side effect- 
+parameter- when u declare the method this is where u declare the variables that will be accepted
+argument- an exression used when calling a method
+implicit return- when u call for a return before the natural explicit return would occur at the end of the program
+8. global scope is when ur variable is available anywhere throughout your program.
+method scope is when your variable is available with in a method but hidden outside
+9. Control flow is the order which statements are evaluated and executed in a program
+10. loop- will keep performing an actions inside until a criteria is met
+if- if a certain criteria is met it will perform this action, if not it moves to the next stipulation
+else- if the "if" criteria is not met and there are no other "elsif" statements, this blanket statement will run
+elsif- acts same as "if", just inside of the statement
+while- will loop until a statement is false
+until- will loop until a statement is true 
