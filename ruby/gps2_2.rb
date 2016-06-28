@@ -11,11 +11,14 @@ def create_list(list_string)
 	list = {}
 	list_array = list_string.split(' ')
 	list_array.each { |item| list[item] = 1 }
-	pretty_list(list)
 	return list
+#	p pretty_list(list)
 end
 
 example_list = create_list('carrots apples pizza milk')
+new_list = create_list('lemonade tomatoes onions icecream')
+#p new_list
+
 
 # Method to add an item to a list
 # input: item name and optional quantity
@@ -26,7 +29,7 @@ example_list = create_list('carrots apples pizza milk')
 
 def add_item(list, item, quantity=1)
 	list[item] = quantity
-	p list
+#	p list
 end
 
 add_item(example_list, 'berries', 4)
@@ -43,8 +46,6 @@ def remove_item(list, item)
 	return list
 end
 
-p remove_item(example_list, 'milk')
-
 # Method to update the quantity of an item
 # input: item and number of items added pair
 # steps:
@@ -56,7 +57,8 @@ def update_quantity(list, item, quantity)
 	return list
 end
 
-p update_quantity(example_list, 'berries', 100)
+update_quantity(example_list, 'berries', 100)
+
 # Method to print a list and make it look pretty
 # input: hash to be printed
 # steps:
@@ -64,5 +66,23 @@ p update_quantity(example_list, 'berries', 100)
 # output: print hash in a string with item; quantity
 
 def pretty_list(list)
-	list.each { |item, quantity| 'There are #{quantity}'}
+	list.each { |item, quantity| puts "Item: #{item.capitalize} - Amount: #{quantity}" }
 end
+
+#p pretty_list(example_list)
+
+update_quantity(new_list, 'lemonade', 2)
+update_quantity(new_list, 'tomatoes', 3)
+update_quantity(new_list, 'onions', 1)
+update_quantity(new_list, 'icecream', 4)
+
+p new_list
+p remove_item(new_list, 'lemonade')
+p update_quantity(new_list, 'icecream', 1)
+p pretty_list(new_list)
+
+
+#Lemonade, qty: 2
+#Tomatoes, qty: 3
+#Onions, qty: 1
+#Ice Cream, qty: 4
