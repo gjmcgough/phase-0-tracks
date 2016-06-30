@@ -1,36 +1,47 @@
 class Santa
-	
-	@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
-	
 
 	def initialize(gender, ethnicity)
 		@gender = gender
 		@ethnicity = ethnicity
-		
 	end
 
 	def speak
-		puts 'Ho, ho, ho! Haaaaaapy Holidays!'
+		return 'Ho, ho, ho! Haaaaaapy Holidays!'
 	end
 
 	def eat_milk_and_cookies(cookie_type)
-		puts "That was a good #{cookie_type} cookie!"
+		return "That was a good #{cookie_type} cookie!"
 	end
 	
 	def celebrate_birthday(age)
 		@age = age
 		@age = @age + 1
-		p "Santa is now #{@age} years old! Happy Birthday!"
+		"Santa is now #{@age} years old! Happy Birthday!"
 	end
 	
-
+	def get_mad_at(reindeer_name)
+		reindeer_name = reindeer_name.capitalize
+		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+		last_place = @reindeer_ranking.length - 1
+		@reindeer_ranking.include?(reindeer_name)
+		@reindeer_ranking.delete(reindeer_name)
+		@reindeer_ranking.insert(last_place, reindeer_name)
+	end
+	
+	def change_gender=(new_gender)
+		@gender = new_gender
+	end
+	
+	def age
+		@age
+	end
+	
+	def ethnicity
+		@ethnicity
+	end
 end
 
-santa = Santa.new('male', 'chinese')
-p santa
-santa.speak
-santa.eat_milk_and_cookies("ginger bread")
-santa.celebrate_birthday(68)
+
 
 santas = []
 example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
@@ -46,16 +57,15 @@ loop do
 end
 
 
+old_saint_nick = Santa.new('male', 'chinese')
+p old_saint_nick.speak
+p old_saint_nick.eat_milk_and_cookies("ginger bread")
+p old_saint_nick.celebrate_birthday(74)
+p old_saint_nick.get_mad_at('dancer')
+p old_saint_nick.age
+p old_saint_nick.ethnicity
+p old_saint_nick.change_gender=('eskimo')
 
- p santas
 
-# Add three attribute-changing methods to your Santa class:
 
-# celebrate_birthday should age Santa by one year.
-# get_mad_at can take a reindeer's name as an argument, and move that reindeer in last place in the reindeer rankings. Vixen knows what he did.
-# The @gender attribute should have a setter method that allows @gender to be reassigned from outside the class definition.
-# Add two "getter" methods as well:
-
-# The method age should simply return @age.
-# The method ethnicity should return @ethnicity.
-# Update your driver code to test your work.
+p santas
