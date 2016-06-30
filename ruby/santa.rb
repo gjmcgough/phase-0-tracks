@@ -1,4 +1,6 @@
 class Santa
+	attr_reader :age, :ethnicity
+	attr_accessor :change_gender
 
 	def initialize(gender, ethnicity)
 		@gender = gender
@@ -56,6 +58,15 @@ loop do
 	idx += 1
 end
 
+loop = 0
+while loop < 50
+	santas << Santa.new(example_genders.sample, example_ethnicities.sample)
+	loop += 1
+end
+
+santas_new_age = 1 + rand(140)
+santas_new_age = "Santa is really #{santas_new_age} years old!!!"
+p santas_new_age
 
 old_saint_nick = Santa.new('male', 'chinese')
 p old_saint_nick.speak
@@ -63,9 +74,7 @@ p old_saint_nick.eat_milk_and_cookies("ginger bread")
 p old_saint_nick.celebrate_birthday(74)
 p old_saint_nick.get_mad_at('dancer')
 p old_saint_nick.age
-p old_saint_nick.ethnicity
+p "Santa is #{old_saint_nick.ethnicity}"
 p old_saint_nick.change_gender=('eskimo')
-
-
-
+p santas_new_age
 p santas
