@@ -1,25 +1,60 @@
-# Design (as opposed to actually building) a class representing anything you like. (Please make it something we have at least heard of.) Whether you want to build a fire-breathing dragon, a dress, or a soccer ball, we hereby grant you the freedom to implement it. No matter what you design, your class must have:
 
-# at least three attributes (using at least two data types) whose values will vary from instance to instance (example: age)
-# at least three methods, at least one of which takes an argument
-# You're welcome to creative about these: a dress can have a swish method, a soccer ball can have an inflatedness attribute, and ... we hope it's obvious what a fire-breathing dragon can do, but if not, you'll figure it out.
-
-# Pseudocode your design as comments in phase-0-tracks/ruby/solo.rb.
-
-
-
-# Create a class for Soul_train_party
-	# Initialize method
-		# instance variable @conductor
-		# instance variable @year
-		# instance variable @artist
-
-	# Dance_line method
-		# takes 1 random guys name and 1 random girls name from an array and has them dance the dance line together
+class Soul_Train_Party
 	
-	# Afro_sheen method
-		# sprays afro sheen on any fro's in need
+	# attribute reader
+	attr_accessor :girls_at_party, :guys_at_party
 
-	# Emergency_call method
-		# calls fire department if roof is on fire and calls ambuland if someone broke their ankle cuz of their platform shoes
-		
+	def initialize(year, artist)
+		@guys_at_party= ['Reginald', 'Stevie', 'Blue', 'Stretch']
+		@girls_at_party = ['Lisa', 'Cheryl', 'Jeannie', 'Candy']
+		@year = year
+		@artist = artist
+	end
+
+	def dance_line
+		guy = @guys_at_party.sample
+		girl = @girls_at_party.sample
+		return "#{guy} and #{girl} are grOoOoOvinnn"
+	end
+	
+	def afro_sheen
+		return "*sprays afro-sheen in a fro in need*"
+	end
+
+	def emergency_method(emergency)
+		if emergency == "roof is on fire"
+			return "The roof is on fire! Call the fire department!"
+		elsif emergency == "sprained ankle"
+			return "Call the ambulance! #{@girls_at_party.sample} rolled her platforms and sprained her ankle!"
+		else
+			return "It's all good ya jive ass turkey! Keep dancin'!"
+		end
+	end	
+	
+end
+
+fourth_of_july = Soul_Train_Party.new(1976, 'The Brothers Johnson')
+
+# Access guys and girls outside of class to add people to the party as they show up
+# Your user should be allowed to create as many instances of your class as they like [AKA THROW AS MANY PARTIES AS THEY LIKE].
+
+parties = []
+artist = ["Michael Jackson", "The O'Jays", "Whitney Houston", "EWF", "Leon Haywood"]
+year_themes = [*1970.. 1980]
+
+parties << Soul_Train_Party.new(year_themes.sample, artist.sample)
+
+
+
+
+
+p fourth_of_july.dance_line
+p fourth_of_july.afro_sheen
+p fourth_of_july.emergency_method("sprained ankle")
+
+# Modify your program so that it has a user interface (a user can interact with your program via the command line).
+
+
+
+# Prompt the user for each attribute, and don't forget to convert their input to the appropriate data type. Store these class instances in an array.
+# When the user indicates that they are finished creating instances, loop through the array and print out the attributes of each instance as a confirmation message of what was created.
