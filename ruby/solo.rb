@@ -1,6 +1,7 @@
 class Soul_Train_Party
 	
-	attr_accessor :girls_at_party, :guys_at_party
+	attr_accessor :year, :artist
+	attr_reader :girls_at_party, :guys_at_party
 
 	def initialize(year, artist, girls_at_party, guys_at_party)
 		@year = year
@@ -74,6 +75,7 @@ end
 p fourth_of_july.dance_line
 p fourth_of_july.afro_sheen
 p fourth_of_july.emergency_method("sprained ankle")
+p fourth_of_july.year=(1972)
 
 def new_parties_attributes_finder(list_of_parties)
 	idx = 0
