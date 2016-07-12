@@ -24,7 +24,7 @@ def next_letter(full_name)
 	idx = 0
 	while idx < full_name.length
 		name = full_name.split('')
-		name.map! { |letter| letter.next }
+		name.map! { |letter| letter.next unless (letter.next == "!") }
 		idx += 1
 	end
 	name
