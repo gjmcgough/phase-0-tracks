@@ -45,6 +45,7 @@ end
 
 dancer = Dancer.new("Misty Copeland", 33)
 
+
 # p dancer
 # p dancer.name
 # p dancer.age
@@ -83,6 +84,12 @@ dancer = Dancer.new("Misty Copeland", 33)
  # p dancer.card
  # p dancer.begin_next_dance
  # p dancer.begin_next_dance
+
+# ANDREW LIVE CODE
+# dancer.queue_dance_with("Mikhail Baryshnikov")
+# dancer.queue_dance_with("Anna Pavlova")
+# dancer.queue_dance_with("Nati Juelle")
+# puts dancer.readable_card
 
  # In the feature I chose to add to my program, I am able to look and find out if a person has already been on the dance card and skip them to the next person if they have already danced. I accomplish this by storing the name of the person who dances in a new array that will be checked against the card array at the beginning of every dance.
  
