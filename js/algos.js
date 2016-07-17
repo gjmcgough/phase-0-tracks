@@ -3,35 +3,40 @@
 
 // it takes an array of strings
 var sampArray = ["long phrase","longest phrase","longer phrase"];
-
+var sampArray2 = ["hi", "how", "hoppity"]
+var sampArray3 = ["boa", "hangry", "rubbish"]
 // loops through each string and determine which is the longest
 
 
 function compareStringLength(sampArray) {
+	// console.log(sampArray)
+
 	var lengthArray = []
 	for (var i = 0; i < sampArray.length; i++) {
 		lengthArray.push(sampArray[i].length);
 	}
 
-console.log(lengthArray)
-
+	// console.log(lengthArray)
 
 	a = lengthArray[0]
 	b = lengthArray[1]
 	c = lengthArray[2]
 	if ((a > b) && (b > c)) {
-		console.log(a);
+		console.log(sampArray[0]);
 	}
 	else if ((a < b) && (b > c)) {
-		console.log(b);
-	}
+		console.log(sampArray[1]);
+	}	
 	else if ((a < b) && (b < c)) {
-		console.log(c);
+		console.log(sampArray[2]);
 	}
 }
 
+compareStringLength(sampArray)
+compareStringLength(sampArray2)
+compareStringLength(sampArray3)
 
-console.log(compareStringLengths(sampArray))
+// console.log(CompareStringLengths(sampArray))
 
 // it will return the longest string in the array
 
