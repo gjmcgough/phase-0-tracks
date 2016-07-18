@@ -17,7 +17,6 @@ function Car(make, year, american) {
 	this.pedalToTheMetal = function() { console.log("*SCREEEEECH* *VROOOOOOOOOOOM*"); };
 }
 
-
 // console.log(colorArray);
 // console.log(nameArray);
 // colorArray.push("yellow");
