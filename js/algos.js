@@ -31,24 +31,51 @@ function compareStringLength(sampArray) {
 	else if ((a < b) && (b < c)) {
 		console.log(sampArray[2]);
 	}
+	else {
+		console.log("There are 2 numbers of equal length")
+	}
 }
 
-compareStringLength(sampArray)
-compareStringLength(sampArray2)
-compareStringLength(sampArray3)
-
-// console.log(CompareStringLengths(sampArray))
+// compareStringLength(sampArray)
+// compareStringLength(sampArray2)
+// compareStringLength(sampArray3)
 
 // it will return the longest string in the array
 
 // Write a function that takes an integer for length, and builds and returns an array of strings of the given length. So if we ran your function with an argument of 3, we would get an array of 3 random words back (the words don't have to be actual sensical English words -- "nnnnfph" totally counts). The words should be of randomly varying length, with a minimum of 1 letter and a maximum of 10 letters. (This involves a new trick, generating a random number, that you'll have to look up, but the solution on how to do so is relatively straightforward.)
-// Add driver code that does the following 10 times: generates an array, prints the array, feeds the array to your "longest word" function, and prints the result.
-
-function getRandom(){
-	return Math.random();
-}
 
 function randomArray(numberOfStrings) {
-	for (var i = 0; i < numberOfStrings; i++);
-
+	var randomStringArray = [];
+	for (var i = 0; i < numberOfStrings; i++){
+		randomStringArray.push(randomStringObject());
+	}
+	return randomStringArray
 }
+
+function randomStringObject () {
+	var randomString = "";
+	var alphabet = "abcdefghijklmnopqrstuvwxyz";
+	var randomNumTo10 = Math.floor((Math.random() * 10) + 1);
+	for (var i = 0; i < randomNumTo10; i++) {
+		var randomAlphabetLetterIndex = Math.floor((Math.random() * 26) + 1);
+		randomString += alphabet.charAt(randomAlphabetLetterIndex);
+	}
+	return randomString
+}
+
+
+// Add driver code that does the following 10 times: generates an array, prints the array, feeds the array to your "longest word" function, and prints the result.
+
+for (var i = 0; i <= 10; i++) {
+	newArray = randomArray(3);	
+	console.log(newArray)
+	console.log(compareStringLength(newArray))
+}
+
+// add string to array
+
+// generate random string
+
+
+
+
