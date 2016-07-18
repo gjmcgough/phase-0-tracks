@@ -35,3 +35,7 @@ console.log(newCar);
 console.log(newCar2);
 newCar.pedalToTheMetal();
 newCar2.pedalToTheMetal()
+
+// you can use for ... in to iterate through keys and values in an object
+
+// I feel there are advantages to using constructor objects, right now the main advantage is it looks like a ruby class and that makes me feel comfortable with it!
