@@ -20,6 +20,7 @@ new_list = create_list('lemonade tomatoes onions icecream')
 #p new_list
 
 
+
 # Method to add an item to a list
 # input: item name and optional quantity
 # steps: 
@@ -57,12 +58,14 @@ def update_quantity(list, item, quantity)
 	return list
 end
 
+
 update_quantity(example_list, 'berries', 100)
 
 # Method to print a list and make it look pretty
 # input: hash to be printed
 # steps:
 	# use interpolation to print each pair with a string
+
 # output: print hash in a string with item; quantity
 
 def pretty_list(list)

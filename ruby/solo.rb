@@ -3,6 +3,7 @@ class Soul_Train_Party
 	attr_accessor :year, :artist
 	attr_reader :girls_at_party, :guys_at_party
 
+
 	def initialize(year, artist, girls_at_party, guys_at_party)
 		@year = year
 		@artist = artist
@@ -37,15 +38,15 @@ fourth_of_july = Soul_Train_Party.new(1976, 'The Brothers Johnson', ['Jane', 'An
 parties = []
 artist = ["Michael Jackson", "The O'Jays", "Whitney Houston", "EWF", "Leon Haywood"]
 year_themes = [*1970.. 1980]
+
 girls_at_party = []
 guys_at_party = []
 
-
 parties << Soul_Train_Party.new(year_themes.sample, artist.sample, girls_at_party, guys_at_party)
-
 
 def party_planner
 	new_parties = []
+
 	loop do
 		puts "What year do you want to theme your party around?"
 		year = gets.chomp

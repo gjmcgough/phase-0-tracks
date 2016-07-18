@@ -43,6 +43,7 @@ h2 {
 	padding: 4px;
 }
 div#rankings {
+
 	margin-right: 55%;
 	background-color: #ff9999;
 	padding: 5px;
@@ -107,6 +108,18 @@ a:visited {
 a:hover {
 	color: white;
 }
+<<<<<<< HEAD
+p#explanation {
+	margin-top: 0px;
+	background-color: #ff9999;
+	border-radius: 20px;
+	border-color: purple;
+	border-style: groove;
+	color: purple;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	padding: 5px;
+}
+
 .image img {
 	width: 100%;
 }
@@ -145,10 +158,31 @@ button {
 #butts{
 	margin-left: 500px;
 }
+<<<<<<< HEAD
+img#back {
+	height: 350px;
+	width: 525px;
+	margin-left: 700px;
+	margin-bottom: -10px;
+	margin-top: -140px;
+	border-style: groove;
+	border-color: yellow;
+}
+img#sleepy {
+	height: 200px;
+	width: 405px;
+	margin-left: 130px;
+	margin-bottom: 5px;
+	margin-top: -190px;
+	border-style: groove;
+	border-color: yellow;
+}
+
 #home {
 	margin-top: 30px;
 	margin-left: 600px;
 }
+
 @media screen and (max-width: 1028px) {
 	div#rankings {
 		width: 45%;
@@ -318,3 +352,4 @@ button {
 	}
 }
 
+>>>>>>> master
