@@ -34,7 +34,7 @@ function compareStringLength(sampArray) {
 }
 
 compareStringLength(sampArray)
-compareStringLength(sampArray2)
+// compareStringLength(sampArray2)
 compareStringLength(sampArray3)
 
 // console.log(CompareStringLengths(sampArray))
