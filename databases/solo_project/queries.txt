@@ -64,3 +64,28 @@ sqlite> SELECT * FROM surfers;
 9|Julian Wilson|17|1
 10|Sebastien Zietz|14|2
 sqlite>
+
+INNER JOIN:
+sqlite> SELECT * FROM surfers INNER JOIN hometowns ON surfers.home_id = hometowns.id;
+1|Matt Wilkinson|8|1|1|Australia
+2|John John Florence|12|2|2|Hawaii
+5|Mick Fanning|7|1|1|Australia
+7|Jordy Smith|23|4|4|South Africa
+9|Julian Wilson|17|1|1|Australia
+10|Sebastien Zietz|14|2|2|Hawaii
+sqlite>
+
+LEFT JOIN:
+sqlite> SELECT * FROM surfers LEFT JOIN hometowns ON surfers.home_id = hometowns.id;
+1|Matt Wilkinson|8|1|1|Australia
+2|John John Florence|12|2|2|Hawaii
+5|Mick Fanning|7|1|1|Australia
+7|Jordy Smith|23|4|4|South Africa
+9|Julian Wilson|17|1|1|Australia
+10|Sebastien Zietz|14|2|2|Hawaii
+sqlite>
+
+RIGHT JOIN:
+sqlite> SELECT * FROM surfers RIGHT JOIN hometowns ON surfers.home_id = hometowns.id;
+Error: RIGHT and FULL OUTER JOINs are not currently supported
+sqlite>
