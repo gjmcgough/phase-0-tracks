@@ -1,0 +1,66 @@
+QUESTION 1:
+sqlite> SELECT * FROM surfers;
+1|Matt Wilkinson|8|1
+2|John John Florence|12|2
+3|Gabriel Medina|10|3
+4|Adriano de Souza|13|3
+5|Mick Fanning|7|1
+6|Italo Ferreira|15|3
+7|Jordy Smith|23|4
+8|Michel Bourez|9|3
+9|Julian Wilson|17|1
+10|Sebastien Zietz|14|2
+sqlite>
+QUESTION 2:
+sqlite> UPDATE surfers SET jersey_num=99 WHERE name="Italo Ferreira";
+sqlite> SELECT * FROM surfers;
+1|Matt Wilkinson|8|1
+2|John John Florence|12|2
+3|Gabriel Medina|10|3
+4|Adriano de Souza|13|3
+5|Mick Fanning|7|1
+6|Italo Ferreira|99|3
+7|Jordy Smith|23|4
+8|Michel Bourez|9|3
+9|Julian Wilson|17|1
+10|Sebastien Zietz|14|2
+sqlite>
+
+QUESTION 3:
+sqlite> SELECT * FROM surfers, hometowns WHERE surfers.home_id = hometowns.id;
+1|Matt Wilkinson|8|1|1|Australia
+2|John John Florence|12|2|2|Hawaii
+3|Gabriel Medina|10|3|3|Brazil
+4|Adriano de Souza|13|3|3|Brazil
+5|Mick Fanning|7|1|1|Australia
+6|Italo Ferreira|15|3|3|Brazil
+7|Jordy Smith|23|4|4|South Africa
+8|Michel Bourez|9|3|3|Brazil
+9|Julian Wilson|17|1|1|Australia
+10|Sebastien Zietz|14|2|2|Hawaii
+sqlite>
+
+QUESTION 4:
+sqlite> SELECT surfers.name, hometowns.home FROM surfers JOIN hometowns ON surfers.home_id = hometowns.id;
+Matt Wilkinson|Australia
+John John Florence|Hawaii
+Gabriel Medina|Brazil
+Adriano de Souza|Brazil
+Mick Fanning|Australia
+Italo Ferreira|Brazil
+Jordy Smith|South Africa
+Michel Bourez|Brazil
+Julian Wilson|Australia
+Sebastien Zietz|Hawaii
+sqlite>
+
+QUESTION 5:
+sqlite> DELETE FROM surfers WHERE home_id=3;
+sqlite> SELECT * FROM surfers;
+1|Matt Wilkinson|8|1
+2|John John Florence|12|2
+5|Mick Fanning|7|1
+7|Jordy Smith|23|4
+9|Julian Wilson|17|1
+10|Sebastien Zietz|14|2
+sqlite>
