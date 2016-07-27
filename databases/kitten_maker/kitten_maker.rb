@@ -1,4 +1,4 @@
-# OPERATION KITTEN EXPLOSION!
+	# OPERATION KITTEN EXPLOSION!
 
 # talk about Object Relational Mapping (ORM)
 
@@ -25,9 +25,9 @@ db.execute(create_table_cmd)
 # add a test kitten
 # db.execute("INSERT INTO kittens (name, age) VALUES ('Bob', 10)")
 
-# add LOOOOTS of kittens!
-# so. many. kittens. 
-#KittenExplosion
+# # add LOOOOTS of kittens!
+# # so. many. kittens. 
+# #KittenExplosion
 def create_kitten(db, name, age)
   db.execute("INSERT INTO kittens (name, age) VALUES (?, ?)", [name, age])
 end

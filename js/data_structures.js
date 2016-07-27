@@ -1,6 +1,7 @@
 var colorArray = ["blue", "white", "green", "red"];
 var nameArray = ["ed", "bill", "jack", "javon"];
 
+
 function coloredHorses(colorArray, nameArray) {
 	var colorNameObject = {}
 	for(var i = 0; i < colorArray.length; i++) {
@@ -15,7 +16,6 @@ function Car(make, year, american) {
 	this.american = true;
 	this.pedalToTheMetal = function() { console.log("*SCREEEEECH* *VROOOOOOOOOOOM*"); };
 }
-
 
 // console.log(colorArray);
 // console.log(nameArray);
