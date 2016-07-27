@@ -13,4 +13,3 @@ for (var i = strIndexLength; i >= 0; i--) {
 
 if (1 == 1)
 	console.log(newStr)
-
