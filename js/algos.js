@@ -3,10 +3,12 @@ var sampArray2 = ["hi", "how", "hoppity"]
 var sampArray3 = ["boa", "hangry", "rubbish"]
 
 function compareStringLength(sampArray) {
+>>>>>>> rawr
 	var lengthArray = []
 	for (var i = 0; i < sampArray.length; i++) {
 		lengthArray.push(sampArray[i].length);
 	}
+
 	a = lengthArray[0]
 	b = lengthArray[1]
 	c = lengthArray[2]
@@ -19,6 +21,7 @@ function compareStringLength(sampArray) {
 	else if ((a < b) && (b < c)) {
 		console.log(sampArray[2]);
 	}
+
 	else {
 		console.log("There are 2 numbers of equal length")
 	}
@@ -52,3 +55,4 @@ for (var i = 0; i <= 10; i++) {
 // compareStringLength(sampArray)
 // compareStringLength(sampArray2)
 // compareStringLength(sampArray3)
+>>>>>>> rawr
