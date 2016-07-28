@@ -5,7 +5,7 @@ Learning jQuery:
 -Find cheat sheet for jQuery 
 -When you believe you understand a concept from reading it, and possibly copy and paste doc codes, try it our for myself
 -If you start to feel stuck step away and clear your mind for a few minutes
--W# schools very helpful
+-W3 schools very helpful
 
 
 jQuery Google CDN:
@@ -36,4 +36,9 @@ $(document).ready(function() {
         $('elementToAffect').effect();
     });
 });
+
+
+
+Most USeful:
+For me the most useful was going through W3 schools and reading through their intro and syntax, while also messing around with their try it editor and using my own codes in sublime.
  -->
