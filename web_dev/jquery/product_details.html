@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script 
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script> 
+	$(document).ready(function() {
+    $('button').click(function() {
+        $('li').hide();
+    });
+	});
+	</script>
 	<title>Product Details</title>
 	<header>
 		<h4><a href="index.html">Home</a></h4>
@@ -13,5 +22,8 @@
 		<li>Bouncey soles</li>
 		<li>Lots of cushion</li>
 	</ul>
+
+	<button>Click me to hide the list</button>
 </body>
 </html>
+
