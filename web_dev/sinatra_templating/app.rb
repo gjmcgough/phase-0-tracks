@@ -1,5 +1,6 @@
 # require gems
 require 'sinatra'
+require "sinatra/reloader" if development?
 require 'sqlite3'
 
 set :public_folder, File.dirname(__FILE__) + '/static'
@@ -22,6 +23,16 @@ end
 post '/students' do
   db.execute("INSERT INTO students (name, campus, age) VALUES (?,?,?)", [params['name'], params['campus'], params['age'].to_i])
   redirect '/'
+end
+
+get '/campus/new' do
+	erb :add_campus
+end
+
+post '/campus' do
+	db.execute("DELETE FROM students WHERE campus=?", [params['campus']])
+	'students'
+	redirect '/'
 end
 
 # add static resources
